@@ -1,6 +1,6 @@
 import { RiAddLine, RiPencilLine } from "react-icons/ri";
 import { Header } from "../../components/Header";
-import { Sidebar } from "../../components/Sidebar";
+
 import {
   Box,
   Button,
@@ -16,7 +16,9 @@ import {
   Td,
   Text,
 } from "@chakra-ui/react";
-import { Pagination } from "@/src/components/Pagination";
+import { Pagination } from '../../components/Pagination'
+import { Sidebar } from '../../components/Sidebar'
+
 
 export default function UserList() {
   return (
@@ -34,7 +36,7 @@ export default function UserList() {
               size="sm"
               fontSize="sm"
               colorScheme="pink"
-              leftIcon={<Icon as={RiAddLine} fontSize="28"/>}
+              leftIcon={<Icon as={RiAddLine} fontSize="28" />}
             >
               Criar novo
             </Button>
@@ -70,7 +72,7 @@ export default function UserList() {
                     size="sm"
                     fontSize="sm"
                     colorScheme="purple"
-                    leftIcon={<Icon as={RiPencilLine} fontSize="16"/>}
+                    leftIcon={<Icon as={RiPencilLine} fontSize="16" />}
                   >
                     Editar
                   </Button>
@@ -95,7 +97,7 @@ export default function UserList() {
                     size="sm"
                     fontSize="sm"
                     colorScheme="purple"
-                    leftIcon={<Icon as={RiPencilLine} fontSize="16"/>}
+                    leftIcon={<Icon as={RiPencilLine} fontSize="16" />}
                   >
                     Editar
                   </Button>
@@ -120,7 +122,7 @@ export default function UserList() {
                     size="sm"
                     fontSize="sm"
                     colorScheme="purple"
-                    leftIcon={<Icon as={RiPencilLine} fontSize="16"/>}
+                    leftIcon={<Icon as={RiPencilLine} fontSize="16" />}
                   >
                     Editar
                   </Button>
@@ -128,7 +130,7 @@ export default function UserList() {
               </Tr>
             </Tbody>
           </Table>
-          <Pagination/>
+          <Pagination />
         </Box>
       </Flex>
     </Box>

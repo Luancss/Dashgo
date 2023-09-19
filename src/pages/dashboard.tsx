@@ -1,60 +1,61 @@
-import { Box, Flex, SimpleGrid, Text, theme } from '@chakra-ui/react';
-import { ApexOptions } from 'apexcharts';
-import dynamic from 'next/dynamic';
-import { Header } from '../components/Header';
-import { Sidebar } from '../components/Sidebar';
+import { Box, Flex, SimpleGrid, Text, theme } from "@chakra-ui/react";
+import { ApexOptions } from "apexcharts";
+import dynamic from "next/dynamic";
+import { Header } from "../components/Header";
+import { Sidebar } from "../components/Sidebar";
 
-const Chart = dynamic(() => import('react-apexcharts'), { ssr: false });
+
+const Chart = dynamic(() => import("react-apexcharts"), { ssr: false });
 
 const options: ApexOptions = {
   chart: {
     toolbar: {
-      show: false
+      show: false,
     },
     zoom: {
-      enabled: false
+      enabled: false,
     },
-    foreColor: theme.colors.gray[500]
+    foreColor: theme.colors.gray[500],
   },
   grid: {
-    show: false
+    show: false,
   },
   dataLabels: {
-    enabled: false
+    enabled: false,
   },
   tooltip: {
-    enabled: false
+    enabled: false,
   },
   xaxis: {
-    type: 'datetime' as const,
+    type: "datetime" as const,
     axisBorder: {
-      color: theme.colors.gray[600]
+      color: theme.colors.gray[600],
     },
     axisTicks: {
-      color: theme.colors.gray[600]
+      color: theme.colors.gray[600],
     },
     categories: [
-      '2021-03-18T00:00:00.000Z',
-      '2021-03-19T00:00:00.000Z',
-      '2021-03-20T00:00:00.000Z',
-      '2021-03-21T00:00:00.000Z',
-      '2021-03-22T00:00:00.000Z',
-      '2021-03-23T00:00:00.000Z',
-      '2021-03-24T00:00:00.000Z'
-    ]
+      "2021-03-18T00:00:00.000Z",
+      "2021-03-19T00:00:00.000Z",
+      "2021-03-20T00:00:00.000Z",
+      "2021-03-21T00:00:00.000Z",
+      "2021-03-22T00:00:00.000Z",
+      "2021-03-23T00:00:00.000Z",
+      "2021-03-24T00:00:00.000Z",
+    ],
   },
   fill: {
     opacity: 0.3,
-    type: 'gradient',
+    type: "gradient",
     gradient: {
-      shade: 'dark',
+      shade: "dark",
       opacityFrom: 0.7,
-      opacityTo: 0.3
-    }
-  }
+      opacityTo: 0.3,
+    },
+  },
 };
 
-const series = [{ name: 'series1', data: [31, 120, 18, 20, 61, 18, 109] }];
+const series = [{ name: "series1", data: [31, 120, 18, 20, 61, 18, 109] }];
 
 export default function Dashboard() {
   return (
@@ -69,7 +70,7 @@ export default function Dashboard() {
           minChildWidth="320px"
           alignItems="flex-start"
         >
-          <Box p={['6', '8']} bg="gray.800" borderRadius={8} pb="4">
+          <Box p={["6", "8"]} bg="gray.800" borderRadius={8} pb="4">
             <Text fontSize="lg" mb="4">
               Inscritos da semana
             </Text>
