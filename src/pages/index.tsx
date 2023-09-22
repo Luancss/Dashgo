@@ -31,7 +31,7 @@ export default function SignIn() {
         as="form"
         w={"100%"}
         maxW={360}
-        bg={"gray.900"}
+        bg={"gray.800"}
         p={8}
         borderRadius={8}
         flexDirection={"column"}
@@ -42,12 +42,13 @@ export default function SignIn() {
           <Input
             type="email"
             label={"E-mail"}
+            error={errors.email}
             {...register("email")}
           />
           <Input
             type="password"
             label={"Senha"}
-        
+            error={errors.password}
             {...register("password")}
           />
         </Stack>
@@ -55,7 +56,7 @@ export default function SignIn() {
         <Button
           type="submit"
           mt={6}
-          colorScheme={"teal"}
+          colorScheme={"pink"}
           size={"lg"}
           fontWeight={"medium"}
           isLoading={formState.isSubmitting}
