@@ -1,34 +1,51 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+<h1 align="center">dashgo</h1><br>
 
-## Getting Started
+![dashgo-home](./.github/dash1.JPG)
+![dashgo-home](./.github/dash2.JPG)
+![dashgo-home](./.github/dash3.JPG)
 
-First, run the development server:
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
+
+---
+Dashboard baseado em dados servidos pelo __Mirage JS__ e interface criada com __Chakra UI__.
+
+## 🚀 Introdução
+Sistema criado através do Ignite da Rocketseat com o intuito de praticar os conhecimentos em cache local e data fetching com *React Query*, criação de interfaces declarativas com *Chakra UI*, criação de gráficos com *ApexCharts.js* e geração de dados fictícios para desenvolvimento com *Mirage JS*.
+
+## :clipboard: Pré-requisitos
+
+- [Node.js 12+](https://nodejs.org/en/download/)
+- [Yarn](https://classic.yarnpkg.com/en/docs/install/#windows-stable)
+
+## :wrench: Instalação
+
+Para clonar o projeto via HTTPS execute o seguinte comando:
+```
+git clone https://github.com/Luancss/Dashgo
+```
+Em seguida instale as dependências:
+```
+yarn
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🔨 Execução em ambiente de desenvolvimento
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```
+yarn dev
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## :hammer_and_wrench: Principais tecnologias utilizadas
+- [Next.js](https://nextjs.org/) - Framework React que adiciona recursos como SSR, SSG e entre outros à biblioteca.
+- [Typescript](https://www.typescriptlang.org/) - Superset Javascript que adiciona tipagem estática à linguagem.
+- [React Query](https://react-query.tanstack.com/) - Biblioteca para lidar com gerenciamento de cache e data fetching no React.
+- [React Hook Form](https://react-hook-form.com/) - Biblioteca para manipulação de formulário no React.
+- [Chakra UI](https://chakra-ui.com/) - Biblioteca para criação de interfaces declarativas.
+- [Mirage JS](https://miragejs.com/) - Biblioteca para geração de dados fictícios para serem consumidos durante o desenvolvimento do front-end.
+- [Yup](https://github.com/jquense/yup) - Biblioteca para validação de formulário largamente utilizada em projetos Javascript.
 
-## Learn More
+## 🎉 Agradecimentos
 
-To learn more about Next.js, take a look at the following resources:
+- [@Rocketseat](https://github.com/Rocketseat) - Plataforma de educação que adquiri conhecimentos excelentes.
+- [@Diego Fernandes](https://github.com/diego3g) - CTO da Rocketseat.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Feito com :heart: por [Luan Carlos](https://github.com/Luancss)https://github.com/Luancss)
