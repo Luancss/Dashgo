@@ -48,4 +48,4 @@ yarn dev
 - [@Rocketseat](https://github.com/Rocketseat) - Plataforma de educação que adquiri conhecimentos excelentes.
 - [@Diego Fernandes](https://github.com/diego3g) - CTO da Rocketseat.
 
-Feito com :heart: por [Luan Carlos](https://github.com/Luancss)https://github.com/Luancss)
+Feito com :heart: por [Luan Carlos](https://github.com/Luancss)
