@@ -38,7 +38,6 @@ export default function SignIn() {
         onSubmit={handleSubmit(handleSignIn)}
       >
         <Stack spacing={4} align={"center"}>
-          <Heading size={"lg"}>Bem vindo(a)!</Heading>
           <Input
             type="email"
             label={"E-mail"}
